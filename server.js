@@ -6,6 +6,14 @@ import { Server } from "socket.io";
 //init app
 const app = express();
 
+// 1 route
+app.get('/', (req, res) => {
+    res.write('This is the websockets server for waktusolat.me');
+    res.write('\nMore info: www.waktusolat.me');
+    res.write('\nContact us: https://github.com/c4lyp5o')
+    res.end();
+});
+
 // init analytics
 let usercount = 0;
 let userlist = [];
@@ -25,7 +33,7 @@ function normalizePort(val) {
     return false;
 }
 
-const port = normalizePort('8000');
+const port = normalizePort('8001');
 
 // error handler
 function errorHandler(error) {
