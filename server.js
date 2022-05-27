@@ -33,7 +33,7 @@ function normalizePort(val) {
     return false;
 }
 
-const port = normalizePort('8001');
+const port = normalizePort('8002');
 
 // error handler
 function errorHandler(error) {
